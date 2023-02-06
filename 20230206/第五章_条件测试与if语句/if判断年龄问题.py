@@ -6,6 +6,8 @@
 如果大于等于18，并且小于65岁，打印“成年人”
 如果大于等于65岁，打印“老年人”
 """
+# 格式化代码  ctrl + alt + l
+# 万能提示    alt + enter
 while True:
     message = input("是否退出当前判断？如果退出，请输入'quit':")
     if message == 'quit':
