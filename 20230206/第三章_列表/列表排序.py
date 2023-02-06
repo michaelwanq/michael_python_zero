@@ -22,6 +22,8 @@
 # print(f'当前grade列表顺序是：{grades}')
 # 方法二、一次打印多个列表
 grades = [77, 88, 73, 99, 82]
+number_grades = len(grades)
+print(f'当前grade列表元素个数为：{number_grades}')
 grades.sort()
 sort_grade = grades
 grades.sort(reverse=True)
