@@ -7,9 +7,9 @@
 打印最新的结果数据
 """
 fruits = {"小张": 'apple',
-'小李': 'orange',
-'小赵': 'banana'
-}
+          '小李': 'orange',
+          '小赵': 'banana'
+          }
 fruits['小钱'] = 'peer'
 fruits['小万'] = 'grape'
 print(fruits)
