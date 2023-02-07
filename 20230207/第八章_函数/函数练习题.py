@@ -9,6 +9,7 @@
 
 
 def sum_numbers(number):
+    ## 方法一
     # numbers = number
     # total = 0
     # if numbers > 1:
@@ -20,6 +21,7 @@ def sum_numbers(number):
     #     print('你输入的数字是1，所有数字之和是1。')
     # else:
     #     print("你输入的数字格式有问题，请重新输入！")
+    ##方法二、更简洁
     sum_values = 0
     for i in range(1,number+1):
         sum_values += i
