@@ -12,14 +12,21 @@ target = random.randint(1,100)
 i = 1
 while i <= 10:
     number = input("请输入你的数字：")
+    if not str(number).isnumeric():
+        print("你输入的不是数字，请重新输入！")
+        continue
     number = int(number)
     if number != target:
         print(target)
-        print(f"这是第{i}次机会，你猜的数字是{number}，你猜的不对！")
-        i += 1
+        if number < target:
+            print(f"这是第{i}次机会，你猜的数字是{number}，你猜小了！")
+            i += 1
+        else:
+            print(f"这是第{i}次机会，你猜的数字是{number}，你猜大了！")
+            i += 1
+        success =  False
     else:
         print(f"这是第{i}次机会，你猜的数字是{number}，你猜对了，恭喜！")
         break
-print(f'i的值为：',i)
-if i == 11:
+if not success:
     print('很遗憾，10次机会你都没猜对，欢迎你下次再来！')
