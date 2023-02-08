@@ -14,3 +14,12 @@
 """
 class User:
     def __init__(self,name,password):
+        self.name = name
+        self.password = password
+
+    def welcome(self):
+        print(f"你好，{self.name}，欢迎到来！")
+
+class Admin:
+    def __init__(self):
+        super().welcome()
