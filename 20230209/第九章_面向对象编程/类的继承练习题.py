@@ -13,8 +13,6 @@
 初始化一个管理员Admin对象、两个Vip对象，两个普通用户，分别调用他们的方法
 
 """
-
-
 class User:
     def __init__(self, name, password):
         self.name = name
