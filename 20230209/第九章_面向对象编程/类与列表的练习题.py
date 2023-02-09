@@ -9,10 +9,13 @@
 如果输入quit就退出，退出之前遍历列表，计算打印信息：
 访客总人数、访客礼金总金额、最大金额、最小金额、平均金额
 """
+
+
 class Customer:
-    def __init__(self,name,money):
+    def __init__(self, name, money):
         self.name = name
         self.money = money
+
 
 customers = []
 while True:
